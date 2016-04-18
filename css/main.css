@@ -17,6 +17,8 @@ html {
 	box-sizing: inherit;
 }
 
+
+
 header {
   padding: .5rem 0;
   background-color: #ccc;
@@ -24,8 +26,10 @@ header {
 }
 
 h1 {
-  margin: 0 0 .5rem;
-  font-size: 1.5rem;
+  margin: 0 0 0.7rem;
+  font-size: 1rem;
+  font:'Oleo Script', Helvetica, sans-serif;
+  color: #fff;
 }
 
 nav ul {
@@ -42,12 +46,72 @@ nav a {
   padding: .5em .75em;
   color: #333;
   text-decoration: none;
+  font-size: .7em;
 }
 
 nav a:hover {
   background-color: #333;
   color: #fff;
 }
+.content {
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  width:100%;
+  max-width: 45em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+.banner {
+  position: relative;
+  margin-bottom: .7em;
+}
+
+.banner h2{
+  font-size: 1.2em;
+}
+
+.img-flex {
+  display: block;
+  width: 100%;
+}
+
+.button {
+  display: inline-block;
+  font-size: 1.125rem;
+  background-color: #333;
+  border-color: #333;
+  color: #fff;
+  padding: .5rem;
+  border-radius: 8px;
+}
+.link-cards {
+  display: block;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 15px;
+  margin-bottom: .7em;
+}
+
+.link-cards a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.link-cards:hover {
+  background-color: #808080;
+}
+
+.button:hover {
+  background-color: #808080;
+}
+
 
 @media only screen and (min-width: 25em) {
 
@@ -56,7 +120,9 @@ nav a:hover {
     text-align: center;
   }
 
-}
+  .content {
+    margin-bottom: 3em;
+  }
 
 @media only screen and (min-width: 38em) {
 
@@ -65,6 +131,41 @@ nav a:hover {
     line-height: 1.4;
   }
 
+  nav a {
+    font-size: 1em;
+  }
+
+  .content {
+    font-size: 1.42em;
+  }
+
+  .link-cards {
+    float: left;
+    width: calc(50% - .7em);
+    margin-right: .35em;
+    margin-left: .35em;
+  }
+
+  .link-cards-wrap {
+    margin-right: -.35em;
+    margin-left: -.35em;
+  }
+
+}
+
+.image-left {
+  max-width: 50%;
+  float: left;
+  padding-right: 2em;
+}
+
+.image-right {
+  max-width: 50%;
+  float: right;
+  padding-left: 2em;
+}
+#menu {
+  display: block;
 }
 
 @media only screen and (min-width: 60em) {
@@ -74,9 +175,18 @@ nav a:hover {
     line-height: 1.5;
   }
 
-}
+  h1 {
+    font-size: 1.8em;
+  }
 
-@media only screen and (min-width: 60em) {
+  .banner h2 {
+    font-size: 1.7em;
+  }
+
+  .content {
+  padding-left: 2em;
+  padding-right: 2em;
+}
 
   header {
     padding-left: 1rem;
