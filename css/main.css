@@ -21,14 +21,14 @@ html {
 
 header {
   padding: .5rem 0;
-  background-color: #ccc;
+  background-color: #333;
   text-align: center;
 }
 
 h1 {
   margin: 0 0 0.7rem;
-  font-size: 1rem;
-  font:'Oleo Script', Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-family:'Great Vibes', Helvetica, sans-serif;
   color: #fff;
 }
 
@@ -44,13 +44,14 @@ nav li {
 nav a {
   display: block;
   padding: .5em .75em;
-  color: #333;
+  color: #fff;
   text-decoration: none;
   font-size: .7em;
+  border-radius: 5px;
 }
 
 nav a:hover {
-  background-color: #333;
+  background-color: #808080;
   color: #fff;
 }
 .content {
@@ -64,7 +65,13 @@ nav a:hover {
   padding-right: 1em;
   text-align: center;
   margin-bottom: 1.5em;
+  color: #fff;
 }
+.body-content {
+  padding-left: 1em;
+  padding-bottom: 1em;
+}
+
 .banner {
   position: relative;
   margin-bottom: .7em;
@@ -79,14 +86,24 @@ nav a:hover {
   width: 100%;
 }
 
+.img-square {
+  display: block;
+  width: 100%;
+}
+
+.img-rectangle {
+  display: none;
+}
+
 .button {
   display: inline-block;
   font-size: 1.125rem;
-  background-color: #333;
+  background-color: #fff;
   border-color: #333;
-  color: #fff;
-  padding: .5rem;
+  color: #333;
+  padding: .4rem;
   border-radius: 8px;
+  text-decoration: none;
 }
 .link-cards {
   display: block;
@@ -110,6 +127,20 @@ nav a:hover {
 
 .button:hover {
   background-color: #808080;
+  color: #fff;
+}
+
+section {
+  background-color: #333;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  background-color: #666;
+  padding: 1rem;
+  font-size: .75rem;
+  color: #fff;
 }
 
 
@@ -124,11 +155,22 @@ nav a:hover {
     margin-bottom: 3em;
   }
 
+  section {
+    clear: both;
+    background-color: #333;
+    overflow: hidden;
+    margin-bottom: 1em;
+  }
+
 @media only screen and (min-width: 38em) {
 
   html {
     font-size: 110%;
     line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 2.5em;
   }
 
   nav a {
@@ -151,8 +193,6 @@ nav a:hover {
     margin-left: -.35em;
   }
 
-}
-
 .image-left {
   max-width: 50%;
   float: left;
@@ -164,8 +204,14 @@ nav a:hover {
   float: right;
   padding-left: 2em;
 }
-#menu {
+
+.body-content {
   display: block;
+  height: 100%;
+}
+
+footer{
+  clear: both;
 }
 
 @media only screen and (min-width: 60em) {
@@ -205,11 +251,26 @@ nav a:hover {
     margin-right: 1.5rem;
   }
 
+  .img-square {
+    display: none;
+  }
+
+  .img-rectangle {
+    display: block;
+    width: 100%;
+  }
 }
 
-footer {
-  text-align: center;
-  background-color: #666;
-  padding: 1rem;
-  font-size: .75rem;
-}
+@media only screen and (min-width: 90em) {
+  section {
+    float:left;
+    clear: none;
+    width: calc(50% - .7em);
+    margin-right: .35em;
+    margin-left: .35em;
+  }
+
+  .section-wrap {
+    margin-right: -.35em;
+    margin-left: -.35em;
+  }
