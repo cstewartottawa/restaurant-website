@@ -167,6 +167,7 @@ footer {
     overflow: hidden;
     margin-bottom: 1em;
   }
+}
 
 @media only screen and (min-width: 38em) {
 
@@ -199,25 +200,26 @@ footer {
     margin-left: -.35em;
   }
 
-.image-left {
-  max-width: 50%;
-  float: left;
-  padding-right: 2em;
-}
+  .image-left {
+    max-width: 50%;
+    float: left;
+    padding-right: 2em;
+  }
 
-.image-right {
-  max-width: 50%;
-  float: right;
-  padding-left: 2em;
-}
+  .image-right {
+    max-width: 50%;
+    float: right;
+    padding-left: 2em;
+  }
 
-.body-content {
-  display: block;
-  height: 100%;
-}
+  .body-content {
+    display: block;
+    height: 100%;
+  }
 
-footer{
-  clear: both;
+  footer{
+    clear: both;
+  }
 }
 
 @media only screen and (min-width: 60em) {
@@ -285,3 +287,4 @@ footer{
     margin-right: -.35em;
     margin-left: -.35em;
   }
+}
