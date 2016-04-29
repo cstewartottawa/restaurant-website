@@ -82,13 +82,13 @@ nav a:hover {
 }
 
 .img-flex {
-  display: ;
+  display: block;
   width: 100%;
 }
 
 .img-square {
   display: block;
-  width: 100%;
+  width: %;
 }
 
 .img-rectangle {
